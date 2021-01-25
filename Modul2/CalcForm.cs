@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DVGB07_Modul2
+namespace DVGB07_Modul2.Modul2
 {
-    public partial class Form1 : Form
+    public partial class CalcForm : Form
     {
-        public Form1()
+        public CalcForm()
         {
             InitializeComponent();
         }

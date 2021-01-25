@@ -1,7 +1,7 @@
 ﻿
-namespace DVGB07_Modul2
+namespace DVGB07_Modul2.Modul2
 {
-    partial class Form1
+    partial class CalcForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,19 @@ namespace DVGB07_Modul2
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // CalcForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "CalcForm";
+            this.Text = "Calculator";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
