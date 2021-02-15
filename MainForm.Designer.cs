@@ -31,8 +31,8 @@ namespace DVGB07_Modul2
         {
             this.Modul2Label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LottoButton = new System.Windows.Forms.Button();
             this.CalcButton = new System.Windows.Forms.Button();
+            this.LottoButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,17 +59,6 @@ namespace DVGB07_Modul2
             this.panel1.Size = new System.Drawing.Size(428, 342);
             this.panel1.TabIndex = 1;
             // 
-            // LottoButton
-            // 
-            this.LottoButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.LottoButton.Location = new System.Drawing.Point(173, 18);
-            this.LottoButton.Name = "LottoButton";
-            this.LottoButton.Size = new System.Drawing.Size(84, 23);
-            this.LottoButton.TabIndex = 0;
-            this.LottoButton.Text = "Lotto";
-            this.LottoButton.UseVisualStyleBackColor = true;
-            this.LottoButton.Click += new System.EventHandler(this.LottoButton_Click);
-            // 
             // CalcButton
             // 
             this.CalcButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -80,6 +69,17 @@ namespace DVGB07_Modul2
             this.CalcButton.Text = "Calculator";
             this.CalcButton.UseVisualStyleBackColor = true;
             this.CalcButton.Click += new System.EventHandler(this.CalcButton_Click);
+            // 
+            // LottoButton
+            // 
+            this.LottoButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LottoButton.Location = new System.Drawing.Point(173, 18);
+            this.LottoButton.Name = "LottoButton";
+            this.LottoButton.Size = new System.Drawing.Size(84, 23);
+            this.LottoButton.TabIndex = 0;
+            this.LottoButton.Text = "Lotto";
+            this.LottoButton.UseVisualStyleBackColor = true;
+            this.LottoButton.Click += new System.EventHandler(this.LottoButton_Click);
             // 
             // MainForm
             // 

@@ -248,7 +248,7 @@ namespace DVGB07_Modul2.Modul2
                     FiveCorrectLabel.Text = correct5.ToString() + ".";
                     SixCorrectLabel.Text = correct6.ToString() + ".";
                     SevenCorrectLabel.Text = correct7.ToString() + ".";
-
+                    DrawList.Clear();
                 }
                 else
                 {
