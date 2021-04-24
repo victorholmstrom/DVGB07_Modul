@@ -31,9 +31,6 @@ namespace DVGB07_Modul2.Modul2
             check_Draws = false;
             min = 0;
             max = 36;
-            correct5 = 0;
-            correct6 = 0;
-            correct7 = 0;
             InitializeComponent();
         }
         private void GenerateDraws()
@@ -100,6 +97,7 @@ namespace DVGB07_Modul2.Modul2
             {
                 MessageBox.Show("Error. Maximum numbers reached.");
             }
+            NrTextBox.Text = string.Empty;
         }
 
         private void RemoveNrButton_Click(object sender, EventArgs e)
@@ -217,6 +215,9 @@ namespace DVGB07_Modul2.Modul2
 
         private void StartLottoButton_Click(object sender, EventArgs e)
         {
+            correct5 = 0;
+            correct6 = 0;
+            correct7 = 0;
             if (check_Nr)
             {
                 if (check_Draws)
@@ -232,7 +233,7 @@ namespace DVGB07_Modul2.Modul2
                             {
                                 if (drawNumber == number)
                                 {
-                                    draw.Remove(number);
+                                    //draw.Remove(number);
                                     n++;
                                     break;
                                 }

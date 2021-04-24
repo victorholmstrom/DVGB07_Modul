@@ -45,7 +45,7 @@ namespace DVGB07_Modul2.Modul2
             InitializeComponent();
         }
 
-        private void opCalculate(operand calcOp)
+        private bool opCalculate(operand calcOp)
         {
             switch (calcOp)
             {
@@ -71,7 +71,10 @@ namespace DVGB07_Modul2.Modul2
                         dec = false;
                     }
                     else
-                        sum = 999999;
+                    {
+                        MessageBox.Show("Error, can not divide with 0");
+                        return false;
+                    }
                     break;
                 case operand.EQU:
                     n = 1;
@@ -80,6 +83,7 @@ namespace DVGB07_Modul2.Modul2
                 default:
                     break;
             }
+            return true;
         }
 
         private void calculate(double buffer_sum, operand buffer_op)
@@ -150,9 +154,22 @@ namespace DVGB07_Modul2.Modul2
 
                 Button btn = (Button)sender;
                 op = (operand)char.Parse(btn.Text);
-                
-                opCalculate(buffer_op);
-                calculate(buffer_sum, buffer_op);
+
+                if (opCalculate(buffer_op))
+                {
+                    calculate(buffer_sum, buffer_op);
+                }
+                else
+                {
+                    input = "";
+                    sum = 0;
+                    op = operand.NUL;
+                    log = "";
+                    dec = false;
+                    n = 0;
+                    LogLabel.Text = "";
+                    InputLabel.Text = "0";
+                }
             }
         }
 

@@ -293,7 +293,6 @@ namespace DVGB07_Modul2.Modul2
             this.NegButton.Name = "NegButton";
             this.NegButton.Size = new System.Drawing.Size(50, 50);
             this.NegButton.TabIndex = 2;
-            this.NegButton.Text = "+/-";
             this.NegButton.UseVisualStyleBackColor = true;
             // 
             // ZeroButton
